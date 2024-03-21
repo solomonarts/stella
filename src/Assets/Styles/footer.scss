@@ -1,0 +1,30 @@
+.footer__container {
+	height: 40dvh;
+	background-color: var(--common-white);
+	perspective: 10px;
+
+	footer {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		transform-style: preserve-3d;
+		z-index: -1;
+	
+		.background,
+		.foreground {
+		  position: absolute;
+		  height: 100%;
+		  width: 100%;
+		  object-fit: cover;
+		}
+
+		.foreground {
+			transform: scale(-0.7);
+			bottom: 0;
+			object-fit: contain;
+		}
+	
+	  }
+}

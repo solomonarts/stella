@@ -1,0 +1,22 @@
+.main__location {
+  height: 60vh;
+  width: 100%;
+  background-color: var(--white-sprite);
+  .map__col {
+	height: 100%;
+	width: 100%;
+    .map__left {
+      height: 100%;
+      background-color: #16938429;
+	  display: grid;
+	  justify-content: center;
+	  align-items: center;
+
+	  h4{
+		font-size: 30px;
+		font-weight: 900;
+		color: var(--common-green);
+	  }
+    }
+  }
+}
