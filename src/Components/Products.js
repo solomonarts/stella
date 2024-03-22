@@ -8,15 +8,16 @@ function Products() {
         <h1>Stellar Products</h1>
       </div>
       <div className="grid grid-flow-row grid-cols-12 products__list">
-        <div className="col-span-4 product__container">
+        <div className="col-span-12 md:col-span-6 lg:col-span-4 product__container">
           <div className="item">
             <div className="prod__pic">
               <img src={prodpic1} alt="product pict" />
             </div>
-            <div className="prod__name">
-              <h6>Natural Flavor</h6>
-            </div>
+
             <div className="prod__description">
+              <div className="prod__name">
+                <h6>Natural Flavor</h6>
+              </div>
               <p>
                 rem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                 nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
@@ -27,15 +28,16 @@ function Products() {
             </div>
           </div>
         </div>
-        <div className="col-span-4 product__container">
+        <div className="col-span-12 md:col-span-6  lg:col-span-4 product__container">
           <div className="item">
             <div className="prod__pic">
               <img src={prodpic1} alt="product pict" />
             </div>
-            <div className="prod__name">
-              <h6>Vanilla Flavor</h6>
-            </div>
+
             <div className="prod__description">
+              <div className="prod__name">
+                <h6>Vanilla Flavor</h6>
+              </div>
               <p>
                 rem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                 nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
@@ -46,15 +48,16 @@ function Products() {
             </div>
           </div>
         </div>
-        <div className="col-span-4 product__container">
+        <div className="col-span-12 md:col-span-6 lg:col-span-4 product__container">
           <div className="item">
             <div className="prod__pic">
               <img src={prodpic1} alt="product pict" />
             </div>
-            <div className="prod__name">
-              <h6>Passion Flavor</h6>
-            </div>
+
             <div className="prod__description">
+              <div className="prod__name">
+                <h6>Passion Flavor</h6>
+              </div>
               <p>
                 rem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                 nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
@@ -67,7 +70,7 @@ function Products() {
         </div>
       </div>
 
-      <div className="view__all__btn">
+      <div className="view__all__btn mt-10">
         <h4>View All Products</h4>
       </div>
     </div>

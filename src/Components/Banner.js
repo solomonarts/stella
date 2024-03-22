@@ -5,6 +5,7 @@ import splashbg from "../Assets/images/bg/bottle-splush-01.png";
 import Products from "./Products";
 import Location from "./Location";
 import Footer from "./Footer";
+import Campaigns from "./Campaigns";
 
 function Banner() {
   return (
@@ -23,7 +24,7 @@ function Banner() {
       {/* about us */}
       <section className="about__section">
         <div className="grid grid-flow-row grid-cols-12 gap-4">
-          <div className="col-span-6 flex flex-col gap-5 about__left">
+          <div className="col-span-12 lg:col-span-6 flex flex-col gap-5 about__left">
             <div className="section__title">About Us</div>
             <div className="section__text">
               orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -38,7 +39,7 @@ function Banner() {
               dignissim qui blandit praesent luptatum zzril dele
             </div>
           </div>
-          <div className="col-span-6 about__right">
+          <div className="col-span-12 lg:col-span-6 about__right">
             <div className="Section__images"></div>
           </div>
         </div>
@@ -47,6 +48,7 @@ function Banner() {
       {/* products */}
       <Products />
       <Location />
+      <Campaigns />
       <Footer />
     </div>
   );

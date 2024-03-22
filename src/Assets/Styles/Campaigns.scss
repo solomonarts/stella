@@ -1,0 +1,145 @@
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(0deg);
+  }
+}
+
+.campaign__container {
+  min-height: 60dvh;
+  height: 80vh;
+  background-color: var(--common-white);
+  padding: var(--section-padding);
+  position: relative;
+
+  .fun__pic {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-10%, -30%);
+    height: auto;
+    width: 6%;
+    opacity: 0.2;
+    animation: shake 2s cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    animation-iteration-count: 4;
+    animation-delay: 0.5s;
+  }
+
+  .campaign__content {
+    height: 100%;
+    .campn__left {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .campaign__text {
+        position: relative;
+        display: grid;
+        gap: 20px;
+
+        h1 {
+          font-size: 40px;
+          font-weight: 900;
+          color: var(--common-green);
+        }
+
+        h4 {
+          font-size: 18px;
+          color: var(--common-blue);
+        }
+
+        .campn__btn {
+          background-color: var(--green-sprite);
+          color: var(--common-white);
+          padding: 10px 20px;
+          font-size: 20px;
+          font-weight: 600;
+          border-radius: 30px;
+          width: fit-content;
+          width: moz-fit-content;
+        }
+      }
+    }
+    .campn__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .campaign__vid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/bg/STELLAH-FINAL-BOTTLE.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+
+        @media only screen and (max-width: 2560px) {
+          /*Tablets [601px -> 1200px]*/
+          height: 60%;
+          width: 70%;
+        }
+        @media only screen and (max-width: 1400px) {
+          /*Tablets [601px -> 1200px]*/
+          height: 60%;
+          width: 70%;
+        }
+        @media only screen and (max-width: 1020px) {
+          /*Tablets [601px -> 1200px]*/
+          height: 100%;
+          width: 80%;
+        }
+        @media only screen and (max-width: 600px) {
+          /*Big smartphones [426px -> 600px]*/
+          height: 100%;
+          width: 70%;
+        }
+        @media only screen and (max-width: 425px) {
+          /*Small smartphones [325px -> 425px]*/
+          height: 100%;
+          width: 100%;
+        }
+
+        .icon {
+          font-size: 80px;
+          color: #ffffff89;
+        }
+      }
+    }
+  }
+}

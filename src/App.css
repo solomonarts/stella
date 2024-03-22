@@ -9,26 +9,33 @@
 	--green-sprite: #43d1c0;
 	--common-blue: #122849;
 	--section-padding: 3% 15%;
-	--title-fts: 34px;
+	--title-fts: 40px;
 	--title-ftw: 900;
 	
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 2560px){
     /*Tablets [601px -> 1200px]*/
 	:root {
 		--section-padding: 10px 15%;
 	}
 }
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+	:root {
+		--section-padding: 10px 10%;
+	}
+}
 @media only screen and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
 	:root {
-		--section-padding: 10px 15%;
+		--section-padding: 10px 8%;
 	}
 }
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
 	:root {
-		--section-padding: 10px 15%;
+		--section-padding: 10px 4%;
 	}
 }

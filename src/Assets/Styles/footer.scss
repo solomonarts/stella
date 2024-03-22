@@ -1,7 +1,33 @@
 .footer__container {
-	height: 40dvh;
+	min-height: 30dvh;
 	background-color: var(--common-white);
 	perspective: 10px;
+	z-index: 3;
+
+	@media only screen and (max-width: 2560px){
+		/*Tablets [601px -> 1200px]*/
+		height: 30vh;
+	}
+		@media only screen and (max-width: 1400px){
+		/*Tablets [601px -> 1200px]*/
+		height: 40vh;
+	}
+	@media only screen and (max-width: 1020px){
+		/*Tablets [601px -> 1200px]*/
+		height: 60vh;
+		padding-bottom: 70px;
+	}
+	@media only screen and (max-width: 600px){
+		/*Big smartphones [426px -> 600px]*/
+		height: 70vh;
+		padding-bottom: 70px;
+	}
+	@media only screen and (max-width: 425px){
+		/*Small smartphones [325px -> 425px]*/
+		height: 80vh;
+		padding-bottom: 70px;
+	}
+	
 
 	footer {
 		position: relative;
@@ -26,5 +52,31 @@
 			object-fit: contain;
 		}
 	
+
+		.footer__nav {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			color: var(--common-white);
+			padding: var(--section-padding);
+			font-size: 18px;
+
+			.footer__logo {
+				img {
+					height: auto;
+					width: 100px;
+				}
+			}
+
+			.socials {
+				a {
+					background-color: var(--common-white);
+					border-radius: 50%;
+					padding: 8px;
+					color: var(--common-blue);
+				}
+			}
+		}
 	  }
 }

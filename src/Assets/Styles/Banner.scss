@@ -3,9 +3,9 @@
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-  background-image: url("../images/bg/STELLAH\ FINAL\ BOTTLE.jpg");
+  background-image: url("../images/bg/STELLAH-FINAL-BOTTLE.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-attachment: scroll;
 
   /*header parallax*/
@@ -59,6 +59,47 @@
       letter-spacing: 1px;
       font-weight: bolder;
 
+      @media only screen and (max-width: 2560px) {
+        /*Tablets [601px -> 1200px]*/
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+        font-size: 60px;
+        text-shadow: 0.5px 0.5px var(--common-blue);
+      }
+      @media only screen and (max-width: 1400px) {
+        /*Tablets [601px -> 1200px]*/
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+        font-size: 60px;
+        text-shadow: 1px 1px var(--common-blue);
+      }
+      @media only screen and (max-width: 1020px) {
+        /*Tablets [601px -> 1200px]*/
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+        font-size: 60px;
+        text-shadow: 1px 1px var(--common-blue);
+      }
+      @media only screen and (max-width: 600px) {
+        /*Big smartphones [426px -> 600px]*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        text-shadow: 1px 1px var(--common-blue);
+      }
+      @media only screen and (max-width: 425px) {
+        /*Small smartphones [325px -> 425px]*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        width: 100%;
+      }
+
       span {
         color: var(--tan);
         text-shadow: 2px 0 var(--tan);
@@ -75,7 +116,7 @@
     justify-content: center;
     min-height: 70%;
     width: 100%;
-    background-color: var(--common-white);
+    background-color: var(--white-sprite);
     padding: var(--section-padding);
 
     .about__left {
@@ -86,13 +127,17 @@
       justify-content: center;
 
       .section__title {
-        background-color: var(--light-white);
+        background-color: var(--common-white);
         width: fit-content;
         width: moz-fit-content;
         padding: 8px 15px;
         color: var(--common-green);
-        font-size: 16px;
+        font-size: 40px;
         font-weight: 600;
+      }
+
+      .section__text {
+        color: var(--common-blue);
       }
     }
 
@@ -107,7 +152,7 @@
       .Section__images {
         height: 100%;
         width: 100%;
-        background-color: var(--white-sprite);
+        background-color: var(--common-white);
       }
     }
   }
